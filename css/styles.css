@@ -12,6 +12,22 @@
     --white: #FFFFFF;
 }
 
+::-webkit-input-placeholder {
+    color: var(--black);
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    color: var(--black);  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: var(--black);  
+ }
+ 
+ :-ms-input-placeholder {  
+    color: var(--black);  
+ }
+
 body {
     background-color: var(--background);
     webkit-font-smoothing: antialiased;
@@ -109,4 +125,28 @@ input[type="button"] {
     outline: none;
     font-weight: bold;
     background-color: var(--white);
+}
+
+.file-group {
+    background-color: var(--white);
+    width: 100%;
+    cursor: pointer;
+}
+
+.file-group > label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#file {
+    width: 100%;
+    border-radius: 5px;
+    padding: 16px;
+    color: var(--black);
+    font-weight: bold;
 }
