@@ -12,6 +12,7 @@
     --white: #FFFFFF;
     --border: #deddc6;
     --btn-bg: #FFFA84;
+    --light-gray: #DDDDDD;
 }
 
 ::-webkit-input-placeholder {
@@ -296,8 +297,10 @@ input[type="file"] {
 .track-button {
     background-color: var(--btn-bg);
     border: 0;
+    width: 100%;
+    margin-block: 0.25rem;
     padding: 1rem;
-    border-radius: 0.25rem;
+    border-radius: 0.75rem;
     font-weight: bold;
 }
 
@@ -378,4 +381,46 @@ input[type="file"] {
 
 .go-back {
     margin-left: 1rem;
+}
+
+.favorites-body {
+    background-color: var(--background);
+}
+
+.favorites {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.favorites div {
+    background-color: var(--gray);
+    width: 80%;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.favorites div ul {
+    margin-bottom: 1rem;
+}
+
+.favorites div ul li {
+    background-color: var(--light-gray);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.favorites div ul li:not(:first-of-type) {
+    margin-top: 1rem;
+}
+
+.favorites div ul li img {
+    margin-right: 1rem;
+    margin-top: -0.5rem;
 }
