@@ -68,6 +68,10 @@ a {
     margin: 16px auto 0;
 }
 
+.logo-container {
+    margin: 0 auto;
+}
+
 .form-container {
     display: flex;
     align-items: center;
@@ -185,6 +189,10 @@ input[type="file"] {
     background-color: transparent;
 }
 
+.header-map > img {
+    margin-left: 2.3rem;
+}
+
 .map iframe {
     height: 85vh;
     width: 100vw;
@@ -259,7 +267,7 @@ input[type="file"] {
     position: relative;
     top: -0.5rem;
     margin: 0 auto;
-    left: auto;
+    left: 2rem;
     right: auto;
     height: 40px;
     width: 40px;
@@ -291,4 +299,83 @@ input[type="file"] {
     padding: 1rem;
     border-radius: 0.25rem;
     font-weight: bold;
+}
+
+.ver-mais {
+    display: block;
+    height: 90vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.speak > label{
+    height: 3rem;
+    background-color: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 5rem;
+    position: relative;
+    width: 20rem;
+    border-radius: 0.25rem;
+    padding: 0 1rem;
+}
+
+.speak label input {
+    height: 2rem;
+    border: 0;
+    outline: none;
+    background-color: var(--gray);
+
+    margin-top: 1rem;
+}
+
+.star {
+    margin-left: 1rem;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    right: -2rem;
+}
+
+.infos {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infos ul li {
+    margin-block: 1rem;
+    font-size: 13px;
+    color: var(--gray);
+}
+
+.infos ul li img {
+    margin-right: 1rem;
+}
+
+.infos ul li span {
+    color: var(--black);
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.go-to-you {
+    display: flex;
+    margin: 0 auto;
+    align-self: center;
+    justify-content: center;
+}
+
+.go-to-you p {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    background-color: var(--gray);
+    border-radius: 1rem;
+    padding: 0.25rem 0.75rem;
+}
+
+.go-back {
+    margin-left: 1rem;
 }
