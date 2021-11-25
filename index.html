@@ -37,7 +37,6 @@
       <img src="./assets/logo.svg" class="logo" alt="Buscando Logo" />
     </div>
 
-
     <main class="map">
       <iframe
         style="border: 0"
@@ -49,25 +48,94 @@
 
       <div class="complement">
         <div class="open-modal">
-          <p>Insira sua rota</p>
+          <p data-bs-toggle="modal" data-bs-target="#exampleModal">Insira sua rota</p>
         </div>
-        <img src="./assets/arrow-up.svg" alt="Ícone com uma seta para cima" id="open-details">
+        <img
+          src="./assets/arrow-up.svg"
+          alt="Ícone com uma seta para cima"
+          id="open-details"
+        />
         <div class="details">
           <div class="atual-location">
-            <img src="./assets/location.svg" alt="">
+            <img src="./assets/location.svg" alt="" />
             <p>Localização atual: <span>Av. João Pinheiro</span></p>
           </div>
           <div class="complement-text">
-            <img src="./assets/paper.svg" alt="">
+            <img src="./assets/paper.svg" alt="" />
             <p>Complemento: <span>Em frente ao Parque Municipal</span></p>
           </div>
         </div>
       </div>
     </main>
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Selecione uma rota para monitorar</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+
+            <ul class="insert-route">
+              <li>
+                <input type="checkbox" name="" id="">
+                <span>R331 - Vila Togni</span>
+              </li>
+
+              <li>
+                <input type="checkbox" name="" id="">
+                <span>R332 - Jd. Country Club</span>
+              </li>
+
+              <li>
+                <input type="checkbox" name="" id="">
+                <span>R333 - Vale das Antas</span>
+              </li>
+
+              <li>
+                <input type="checkbox" name="" id="">
+                <span>R334 - Vila Rica</span>
+              </li>
+
+              <li>
+                <input type="checkbox" name="" id="">
+                <span>R335 - Represa Bortolan</span>
+              </li>
+
+              <li>
+                <input type="checkbox" name="" id="">
+                <span>R336 - Marco Divisório</span>
+              </li>
+            </ul>
 
 
-    
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="m-auto track-button"
+              data-bs-dismiss="modal"
+            >
+              Monitorar rota
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- offcanvas -->
     <div
       class="offcanvas offcanvas-start"

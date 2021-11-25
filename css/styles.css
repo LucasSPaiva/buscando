@@ -11,6 +11,7 @@
     --gray: #C4C4C4;
     --white: #FFFFFF;
     --border: #deddc6;
+    --btn-bg: #FFFA84;
 }
 
 ::-webkit-input-placeholder {
@@ -277,4 +278,17 @@ input[type="file"] {
 
 .open-modal p {
     margin-bottom: 0;
+}
+
+.insert-route li {
+    display: flex;
+    align-items: center;
+}
+
+.track-button {
+    background-color: var(--btn-bg);
+    border: 0;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    font-weight: bold;
 }
