@@ -40,132 +40,68 @@
 
     <main class="favorites">
       <div>
-        <h3>N23 - Corujão P. Preta/P.Coberta (Sentido P.Preta)</h3>
+        
+        <h3 class="mt-4">N23 - Corujão P. Preta/P.Coberta (Sentido P.Preta)</h3>
         <h3 class="mt-4 lines-title">Itinerário</h3>
 
         <div class="points">
-            <div class="ida">
-                <h4>IDA</h4>
-                <ul>
-                    <li><p class="fw-bold">Ponto Pad. Fiorella</p></li>
-                    <li><p>Av. João Pinheiro</p></li>
-                    <li><p class="fw-bold">Vila Cruz</p></li>
-                    <li><p>Rua Olegário Maciel</p></li>
-                    <li><p>Av. Champagnat</p></li>
-                    <li><p>Av. Antônio Togni</p></li>
-                    <li><p class="fw-bold">Ponte Preta</p></li>
-                    <li><p>Av. Mansur Fraya</p></li>
-                    <li><p>Shopping</p></li>
-                    <li><p>Rodoviária</p></li>
-                </ul>
-            </div>
-            <div class="volta">
-                <h4>RETORNO</h4>
-                <ul>
-                    <li><p class="fw-bold">Ponte Preta</p></li>
-                    <li><p>Av. Mansur Fraya</p></li>
-                    <li><p>Av. João Pinheiro</p></li>
-                    <li><p class="fw-bold">Centro</p></li>
-                    <li><p>Av. Francisco Sales</p></li>
-                    <li><p>Rua Mato Grosso</p></li>
-                    <li><p>Rua Pernambuco</p></li>
-                    <li><p>Rua Assis Figueiredo</p></li>
-                    <li><p>Estação Central</p></li>
-                </ul>
-            </div>
+          <div class="ida">
+            <h4>IDA</h4>
+            <ul>
+              <li><p class="fw-bold">Ponto Pad. Fiorella</p></li>
+              <li><p>Av. João Pinheiro</p></li>
+              <li><p class="fw-bold">Vila Cruz</p></li>
+              <li><p>Rua Olegário Maciel</p></li>
+              <li><p>Av. Champagnat</p></li>
+              <li><p>Av. Antônio Togni</p></li>
+              <li><p class="fw-bold">Ponte Preta</p></li>
+              <li><p>Av. Mansur Fraya</p></li>
+              <li><p>Shopping</p></li>
+              <li><p>Rodoviária</p></li>
+            </ul>
+          </div>
+          <div class="volta">
+            <h4>RETORNO</h4>
+            <ul>
+              <li><p class="fw-bold">Ponte Preta</p></li>
+              <li><p>Av. Mansur Fraya</p></li>
+              <li><p>Av. João Pinheiro</p></li>
+              <li><p class="fw-bold">Centro</p></li>
+              <li><p>Av. Francisco Sales</p></li>
+              <li><p>Rua Mato Grosso</p></li>
+              <li><p>Rua Pernambuco</p></li>
+              <li><p>Rua Assis Figueiredo</p></li>
+              <li><p>Estação Central</p></li>
+            </ul>
+          </div>
         </div>
         <div class="mt-4">
-            <h3>Quadro de horários</h3>
-            <p>Dias Úteis Sábados, Domingos e Feriados - Partindo do Centro</p>
-            <ul class="corujao d-flex align-items-center justify-content-center">
-                <li>01:30</li>
-                <li>03:30</li>
-                <li>04:30</li>
-                <li>05:25</li>
-            </ul>
+          <h3>Quadro de horários</h3>
+          <p>Dias Úteis Sábados, Domingos e Feriados - Partindo do Centro</p>
+          <ul class="corujao d-flex align-items-center justify-content-center">
+            <li>01:30</li>
+            <li>03:30</li>
+            <li>04:30</li>
+            <li>05:25</li>
+          </ul>
+
+          <iframe
+          width="240"
+          height="200"
+          frameborder="0"
+          style="border: 0"
+          src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyB44MzYngfgoljPK4YnGOdhpytEchUue84&&origin=Oslo+Norway&destination=Telemark+Norway&avoid=tolls|highways"
+        >
+        </iframe>
         </div>
 
-        <div class="route-map">
-            <iframe
-              width="240"
-              height="200"
-              frameborder="0"
-              style="border: 0"
-              src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyB44MzYngfgoljPK4YnGOdhpytEchUue84&&origin=Oslo+Norway&destination=Telemark+Norway&avoid=tolls|highways"
-              allowfullscreen
-            >
-            </iframe>
-          </div>
         
       </div>
     </main>
 
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Selecione uma rota para monitorar
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <ul class="insert-route">
-              <li>
-                <input type="checkbox" name="r331" id="r331" />
-                <label for="r331">R331 - Vila Togni</label>
-              </li>
-
-              <li>
-                <input type="checkbox" name="r332" id="r332" />
-                <label for="r332">R332 - Jd. Country Club</label>
-              </li>
-
-              <li>
-                <input type="checkbox" name="r333" id="r333" />
-                <label for="r333">R333 - Vale das Antas</label>
-              </li>
-
-              <li>
-                <input type="checkbox" name="r334" id="r334" />
-                <label for="r334">R334 - Vila Rica</label>
-              </li>
-
-              <li>
-                <input type="checkbox" name="r335" id="r335" />
-                <label for="r335">R335 - Represa Bortolan</label>
-              </li>
-
-              <li>
-                <input type="checkbox" name="r336" id="r336" />
-                <label for="r336">R336 - Marco Divisório</label>
-              </li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="m-auto track-button"
-              data-bs-dismiss="modal"
-            >
-              Monitorar rota
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <a href="./index.html" class="go-back">
+      <img src="./assets/arrow-left.svg" alt="Ícone de voltar" />
+    </a>
 
     <!-- offcanvas -->
     <div
@@ -184,10 +120,10 @@
         <nav>
           <ul>
             <li><a href="#">Adicionar rotas</a></li>
-            <li><a href="#">Quadro de horários</a></li>
+            <li><a href="./quadro-horarios.html">Quadro de horários</a></li>
             <li><a href="#">Avaliações</a></li>
             <li><a href="#">Rotas recentes</a></li>
-            <li><a href="#">Rotas/linhas favoritas</a></li>
+            <li><a href="./favorites.html">Rotas/linhas favoritas</a></li>
             <li><a href="#">Configurações</a></li>
             <li><a href="./login.html">Sair</a></li>
           </ul>

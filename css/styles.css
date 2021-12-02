@@ -303,6 +303,13 @@ input[type="file"] {
     padding: 1rem;
     border-radius: 0.75rem;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.track-button a {
+    color: var(--black) !important;
 }
 
 .ver-mais {
@@ -381,7 +388,9 @@ input[type="file"] {
 }
 
 .go-back {
+    position: absolute;
     margin-left: 1rem;
+    bottom: 2rem;
 }
 
 .favorites-body {
@@ -405,6 +414,7 @@ input[type="file"] {
     height: 70vh;
     display: flex;
     flex-direction: column;
+    overflow: scroll;
 }
 
 .favorites div ul {
@@ -455,8 +465,6 @@ input[type="file"] {
 }
 
 .points {
-    height: 30%;
-    overflow: scroll;
 }
 
 .ida ul li p, .volta ul li p {
