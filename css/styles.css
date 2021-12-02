@@ -13,6 +13,7 @@
     --border: #deddc6;
     --btn-bg: #FFFA84;
     --light-gray: #DDDDDD;
+    --green: #8CC14C;
 }
 
 ::-webkit-input-placeholder {
@@ -396,7 +397,7 @@ input[type="file"] {
     justify-content: center;
 }
 
-.favorites div {
+.favorites > div {
     background-color: var(--gray);
     width: 80%;
     padding: 1rem 2rem;
@@ -451,4 +452,23 @@ input[type="file"] {
 
 .lines-title {
     font-size: 1rem;
+}
+
+.points {
+    height: 30%;
+    overflow: scroll;
+}
+
+.ida ul li p, .volta ul li p {
+    margin-top: 1rem;
+}
+
+.corujao li {
+    margin-right: 0.25rem;
+    background-color: var(--green) !important;
+    color: var(--white);
+}
+
+.corujao li:first-of-type {
+    margin-top: 1rem;
 }
