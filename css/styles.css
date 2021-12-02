@@ -424,3 +424,31 @@ input[type="file"] {
     margin-right: 1rem;
     margin-top: -0.5rem;
 }
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    padding: 0 0.75rem;
+    border-radius: 1rem;
+}
+
+.search input {
+    margin-top: 0.75rem;
+    padding: 0.25rem 1rem;
+}
+
+.lines li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lines li p:first-of-type {
+    margin-top: 1rem;
+}
+
+.lines-title {
+    font-size: 1rem;
+}
